@@ -2,6 +2,8 @@ package pl.coderslab.game_objects;
 
 public class Enemy extends Entity{
 
+    //Model przeciwnika
+
     private int hp;
     private int attackPower;
 
