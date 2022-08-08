@@ -20,4 +20,12 @@ public class Hero extends Enemy{
     public void setEquipment(ItemsList equipment) {
         this.equipment = equipment;
     }
+
+    public int getLocationNumber() {
+        return locationNumber;
+    }
+
+    public void setLocationNumber(int locationNumber) {
+        this.locationNumber = locationNumber;
+    }
 }
