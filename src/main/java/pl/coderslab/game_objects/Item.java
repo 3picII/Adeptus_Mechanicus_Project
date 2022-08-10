@@ -1,5 +1,7 @@
 package pl.coderslab.game_objects;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
 import org.hibernate.validator.constraints.Range;
 
 import javax.persistence.*;
@@ -9,6 +11,8 @@ import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = Item.TABLE_NAME)
+@Data
+@AllArgsConstructor
 public class Item{
 
     final static String TABLE_NAME = "items";
@@ -29,5 +33,6 @@ public class Item{
     @Min(10)
     private int power;
 
-
+    public Item() {
+    }
 }
