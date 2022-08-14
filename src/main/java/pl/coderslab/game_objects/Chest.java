@@ -1,19 +1,16 @@
 package pl.coderslab.game_objects;
 
+import lombok.Getter;
+import lombok.Setter;
+
 public class Chest extends Entity{
-    private ItemsList treasure;
 
+    @Getter
+    @Setter
+    private Item treasure;
 
-    public Chest(String name, String description, ItemsList treasure) {
+    public Chest(String name, String description, Item treasure) {
         super(name, description);
-        this.treasure = treasure;
-    }
-
-    public ItemsList getTreasure() {
-        return treasure;
-    }
-
-    public void setTreasure(ItemsList treasure) {
         this.treasure = treasure;
     }
 }

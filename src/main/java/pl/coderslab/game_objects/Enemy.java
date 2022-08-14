@@ -1,10 +1,18 @@
 package pl.coderslab.game_objects;
 
+import lombok.Getter;
+import lombok.Setter;
+
 public class Enemy extends Entity{
 
     //Model przeciwnika
 
+    @Getter
+    @Setter
     private int hp;
+
+    @Getter
+    @Setter
     private int attackPower;
 
     public Enemy(String name, String description) {
@@ -17,19 +25,4 @@ public class Enemy extends Entity{
         this.attackPower = attackPower;
     }
 
-    public int getHp() {
-        return hp;
-    }
-
-    public void setHp(int hp) {
-        this.hp = hp;
-    }
-
-    public int getAttackPower() {
-        return attackPower;
-    }
-
-    public void setAttackPower(int attackPower) {
-        this.attackPower = attackPower;
-    }
 }
